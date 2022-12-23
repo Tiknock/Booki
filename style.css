@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: raleway;
+}
+header {
+    height: 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img {
+    height: 19px;
+}
+nav {
+    width: 25%;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+nav a:hover {
+    color: #0065FC;
+}

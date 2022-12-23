@@ -1,0 +1,51 @@
+icons :
+<i class="fa-solid fa-money-bill-wave"></i>
+<i class="fa-solid fa-heart"></i>
+<i class="fa-solid fa-dog"></i>
+<i class="fa-solid fa-person"></i>
+<i class="fa-solid fa-chart-line"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-info"></i>
+<i class="fa-solid fa-location-dot"></i>
+<i class="fa-solid fa-magnifying-glass"></i>
+
+
+colors :
+#0065FC
+#DEEBFF
+#D9D9D9
+
+fonts :
+
+Ag
+Information
+Font
+Raleway
+Weight
+400
+Size
+16px
+Line height
+18.78px
+
+Ag
+Title/Section
+Font
+Raleway
+Weight
+700
+Size
+22px
+Line height
+25.83px
+
+Ag
+Card/Title
+Font
+Raleway
+Weight
+700
+Size
+16px
+Line height
+18.78px
