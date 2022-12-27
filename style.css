@@ -75,7 +75,7 @@ form {
     display: flex;
     align-items: center;
 }
-form i {
+.fa-location-dot {
     color : black;
     margin-right: 0;
     padding: 10px;
