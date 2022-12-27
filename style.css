@@ -3,6 +3,7 @@
     font-family: Raleway;
 }
 * {
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -87,7 +88,8 @@ input {
     height: 100%;
     border: none;
     outline: none;
-    width: 332px;
+    max-width: 332px;
+    width: 100%;
 }
 
 #search-button {
@@ -106,11 +108,12 @@ input {
     cursor: pointer;
 }
 .fa-magnifying-glass {
-    display: none;
+    display: none!important ;
 }
 #filters {
     display: flex;
-    width: 914px;
+    max-width: 914px;
+    width: 100%;
     justify-content: space-around;
     align-items: center;
     margin: 32px 0 38px 0;
@@ -138,10 +141,13 @@ input {
     color: black;
     text-decoration: none;
 }
+
+
 /* nights part*/
 #nights {
     display: flex;
     margin: 50px;
+    gap: 40px;
 }
 #nights p {
     font-size: 14px;
@@ -171,8 +177,8 @@ input {
     background: #f2f2f2;
     border-radius: 20px;
     padding: 40px;
-    width: 880px;
-    margin-right: 40px;
+    /* width: 880px; */
+    width: 58%;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -194,7 +200,8 @@ input {
 #popular-nights {
     background: #f2f2f2;
     border-radius: 20px;
-    width: 420px;
+    width: 28%;
+    /* width: 420px; */
     padding: 40px;
     display: flex;
     flex-wrap: wrap;
@@ -241,8 +248,11 @@ input {
     object-fit: cover;
 }
 #activities ul {
+    margin: 0 auto;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
 #activities li {
     box-shadow: 2px 2px 13px 4px rgba(198, 198, 198, 0.78);
@@ -287,24 +297,45 @@ footer p {
 
 
 @media screen and (max-width: 992px) {
+    h3 {
+        font-size: 14px;
+    }
     #nights {
         display: block;
+        gap:0;
+        /* margin: 72px; */
+    }
+    #nights p {
+        font-size: 13px;
+    }
+    #marseille-nights {
+        width: 100%;
+    }
+    #marseille-nights ul {
+        margin: 23px 0 40px 0;
     }
     #popular-nights {
         width: 100%;
         display: block;
     }
     #popular-nights ul {
+        margin: 34px 0 0 0;
         flex-wrap: nowrap;
         display: flex;
         justify-content: space-around;
     }
     #popular-nights li {
         height: 144px;
-        width: 242px;
     }
     #popular-nights img {
         width: 106px;
+    }
+    #popular-nights h3 {
+        width: 100%;
+        margin-top: 12px;
+    }
+    #activities ul {
+        margin: 34px 0 0 0 ;
     }
     #activities img {
         height: 211px;
@@ -352,18 +383,21 @@ footer p {
         display: none;
     }
     .fa-magnifying-glass {
-        display: block;
+        display: block!important;
         color: #FFFFFF;
+    }
+    #search {
+        width: 90%;
+        margin: 0 auto;
     }
     #filters {
         display: block;
-        width: 375px;
-
     }
     #filters-buttons {
+        width: 90%;
+        margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        width: 375px;
     }
     #filters button {
         font-size: 11px;
@@ -373,49 +407,59 @@ footer p {
         margin-top: 16px;
     }
     #search p {
-        width: 375px;
         margin: 0;
     }
     #nights {
         margin: 17px 0;
+        width: 100%;
         display: flex;
         flex-direction: column-reverse
     }
-    #marseille-nights {
-        width: 375px;
+    #marseille-nights,  #popular-nights {
+        width: 90%;
+        margin: 0 auto;
         border-radius: 0;
+        padding: 20px;
     }
     #marseille-nights img {
         width: 100%;
-    }
-    #marseille-nights li {
-        width: 335px;
-    }
-    #popular-nights {
-        border-radius: 0;
-        width: 375px;
+        margin: 0 auto;
     }
     #popular-nights ul, #marseille-nights ul {
         display: block;
     }
-    #popular-nights li {
-        width: 334px;
+    #marseille-nights li, #popular-nights li {
+        margin: 0 auto;
+        width: 75%;
     }
+    #popular-nights a, #marseille-nights a {
+    width: 100%;
+    }
+    #popular-nights-title {
+        width: 90%;
+        margin: 0 auto;
+    }    
     #popular-nights img {
-        width: 137px;
+        height: 100%;
+        max-width: 100%;
     }
+
+    /*  */
     #activities {
-        margin: 0 20px;
+        padding: 0 20px;
     }
     #activities ul {
-        display: block;
+        margin: 0 auto;
+        width: 100%;
+        flex-direction: column;
     }
     #activities li {
-        width: 334px;
+        width: 100%;
+        margin: 0 auto;
     }
     #activities img {
         height: 134px;
-        width: 334px;
+        width: 100%;
         object-fit: cover;
     }
     footer {
