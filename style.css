@@ -186,7 +186,7 @@ input {
 #marseille-nights ul {
     width: 100%;
     justify-content: space-around;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 #marseille-nights img {
     width: 246px;
@@ -216,6 +216,9 @@ input {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+#popular-nights ul {
+    margin: 20px auto;
 }
 #popular-nights a {
     display: flex;
@@ -292,9 +295,11 @@ footer p {
     font-size: 16px;
 }
 
-
-
-
+/* @media screen and (max-width: 992px) and (min-width: 1127px) {
+    #marseille-nights li {
+        width: 90%;
+    }
+} */
 
 @media screen and (max-width: 992px) {
     h3 {
@@ -429,7 +434,7 @@ footer p {
         display: block;
     }
     #marseille-nights li, #popular-nights li {
-        margin: 0 auto;
+        margin: 5px auto;
         width: 75%;
     }
     #popular-nights a, #marseille-nights a {
@@ -463,18 +468,24 @@ footer p {
         object-fit: cover;
     }
     footer {
+        width: 100%;
+        margin: 0 auto;
         height: 100%;
         display: block;
-        margin: 80px 0 0px;
-        padding: 0 0 60px 30px ;
-    }
-    footer div:first-child {
-        margin-left: 0;
-    }
-    footer div:last-child {
-        margin-right: 0;
+        padding: 0 0 60px 0; ;
     }
     footer div {
         margin-bottom: 40px;
+        width: 70%;
+        margin: 0 auto;
+    }
+    footer div:first-child {
+        margin-left: auto;
+    }
+    footer div:last-child {
+        margin-right: auto;
+    }
+    footer h3 {
+        margin-top: 40px;
     }
 }
