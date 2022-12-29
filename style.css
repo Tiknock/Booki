@@ -155,19 +155,20 @@ input {
 #nights i:last-child{
     color: #f2f2f2;
 }
-#nights ul {
+.nights-container {
     display: inline-flex;
     flex-wrap: wrap;
     gap: 15px;
+    margin: 20px auto;
 }
-#nights li {
+article {
     background: #fff;
     border: solid 5px #fff;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 2px 2px 13px 4px rgba(198, 198, 198, 0.78);;
 }
-#nights li i {
+article i {
     margin: 0;
 }
 .presentation {
@@ -183,10 +184,9 @@ input {
     flex-wrap: wrap;
     align-items: flex-start;
 }
-#marseille-nights ul {
+#marseille-nights div {
     width: 100%;
     justify-content: space-around;
-    margin: 20px auto;
 }
 #marseille-nights img {
     width: 246px;
@@ -216,9 +216,6 @@ input {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-#popular-nights ul {
-    margin: 20px auto;
 }
 #popular-nights a {
     display: flex;
@@ -316,20 +313,20 @@ footer p {
     #marseille-nights {
         width: 100%;
     }
-    #marseille-nights ul {
+    #marseille-nights div {
         margin: 23px 0 40px 0;
     }
     #popular-nights {
         width: 100%;
         display: block;
     }
-    #popular-nights ul {
+    #popular-nights .nights-container {
         margin: 34px 0 0 0;
         flex-wrap: nowrap;
         display: flex;
         justify-content: space-around;
     }
-    #popular-nights li {
+    #popular-nights article {
         height: 144px;
     }
     #popular-nights img {
@@ -420,7 +417,7 @@ footer p {
         display: flex;
         flex-direction: column-reverse
     }
-    #marseille-nights,  #popular-nights {
+    .nights-container {
         width: 90%;
         margin: 0 auto;
         border-radius: 0;
@@ -430,14 +427,14 @@ footer p {
         width: 100%;
         margin: 0 auto;
     }
-    #popular-nights ul, #marseille-nights ul {
+    .nights-container {
         display: block;
     }
-    #marseille-nights li, #popular-nights li {
+    .card {
         margin: 5px auto;
         width: 75%;
     }
-    #popular-nights a, #marseille-nights a {
+    .nights-container a {
     width: 100%;
     }
     #popular-nights-title {
@@ -449,7 +446,7 @@ footer p {
         max-width: 100%;
     }
 
-    /*  */
+    /*  activities */
     #activities {
         padding: 0 20px;
     }
