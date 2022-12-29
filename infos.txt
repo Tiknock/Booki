@@ -49,3 +49,30 @@ Size
 16px
 Line height
 18.78px
+
+
+
+
+    #marseille-nights .nights-container {
+        margin: 23px 0 40px 0;
+    }
+
+
+
+
+
+
+
+    #marseille-nights h1, #marseille-nights {
+    width: 90%;
+    margin: 0 auto;
+    }
+
+        #popular-nights .nights-container {
+m0 auto
+
+    .nights-container {gap10}
+
+    #marseille-nights .nights-container {
+        margin: 23px 0 40px 0;
+    }
