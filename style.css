@@ -65,7 +65,8 @@ p {
 
 /* search part */
 #search {
-    margin: 0 55px;
+    margin: 0 auto;
+    width: 95%;
 }
 form {
     font-family: Raleway, sans-serif;  
@@ -78,11 +79,15 @@ form {
 .fa-location-dot {
     color : black;
     margin-right: 0;
-    padding: 10px;
-    border-radius: 50px 0 0 50px;
+    padding: 15px 15px 15px 18px;
+    border-radius: 15px 0 0 15px;
+    background-color: #f2f2f2;
+    font-size: 18px;
 }
 input {
     font-family: Raleway, sans-serif;  
+    font-size: 18px;
+    padding-left: 10px;
     font-weight: 700;
     color: black;
     height: 100%;
@@ -104,7 +109,7 @@ input {
     justify-content: center;
     display: flex;
     overflow: hidden;
-    border-radius: 0 50px 50px 0;
+    border-radius: 0 15px 15px 0;
     cursor: pointer;
 }
 .fa-magnifying-glass {
@@ -137,23 +142,22 @@ input {
 }
 
 
+
 #nights a, #activities a {    
     color: black;
     text-decoration: none;
 }
-
-
+#nights, #activities {
+    width: 95%;
+    margin: 50px auto;
+}
 /* nights part*/
 #nights {
     display: flex;
-    margin: 50px;
     gap: 40px;
 }
 #nights p {
     font-size: 14px;
-}
-#nights i:last-child{
-    color: #f2f2f2;
 }
 .nights-container {
     display: inline-flex;
@@ -183,11 +187,9 @@ article i {
     align-items: flex-start;
     padding: 40px;
 }
-#popular-nights .card {
-    width: 100%;
-    margin: 0 auto;
+#nights i:last-child{
+    color: #f2f2f2;
 }
-
 #marseille-nights {
     width: 60%;
 }
@@ -205,6 +207,10 @@ article i {
 #popular-nights {
     width: 30%;
 }
+#popular-nights .card {
+    width: 100%;
+    margin: 0 auto;
+}
 #popular-nights-title i {
     color: #0065fc !important;
 }
@@ -217,11 +223,10 @@ article i {
 }
 #popular-nights a {
     display: flex;
-    width: 343px;
     height: 144px;
 }
 #popular-nights img {
-    width: 137px;
+    width: 35%;
     height: 144px;
     object-fit: cover;
 }
@@ -234,9 +239,6 @@ article i {
 }
 
 /* activities */
-#activities {
-    margin: 50px;
-}
 #activities h1 {
     margin-bottom: 18px;
 }
@@ -267,18 +269,19 @@ article i {
 
 footer {
     background: #f2f2f2;
-    margin: 60px 50px 0 ;
+    margin: 60px auto 0;
+    width: 95%;
     height: 225px;
+    padding: 40px 0;
+}
+.footer-container {
     display: flex;
-    justify-content: space-between;
     text-align: left;
-    align-items: center;
+    width: 90%;
+    margin: auto;  
 }
-footer div:first-child {
-    margin-left: 70px;
-}
-footer div:last-child {
-    margin-right: 327px;
+.footer-box {
+    width: 33%;
 }
 footer h3 {
     margin-bottom: 20px;
@@ -290,12 +293,15 @@ footer p {
     font-size: 16px;
 }
 
-@media (min-width: 992px) and (max-width: 1127px) {
+@media (min-width: 992px) and (max-width: 1150px) {
     #marseille-nights .card {
         width: 40%;
     }
     #popular-nights .card, #popular-nights h3 {
         width: 80%;
+    }
+    #popular-nights img {
+        width: 25%;
     }
     #nights h3 {
         font-size: 15px;
@@ -303,13 +309,20 @@ footer p {
 }
 
 @media screen and (max-width: 992px) {
+    section {
+        width: 95%;
+        margin: 0 auto;
+    }
+    #search {
+        margin: 0 auto;
+    }
     h3 {
         font-size: 14px;
     }
     #nights {
-        display: block;
+        flex-wrap: wrap;
         gap:0;
-        margin: 0;
+        margin: 0 auto;
     }
     #nights p {
         font-size: 13px;
@@ -319,26 +332,26 @@ footer p {
     }
     #marseille-nights {
         width: 100%;
+        margin-bottom: 40px;
+        padding: 40px 20px;
     }
     #marseille-nights .nights-container {
         margin: 23px 0 40px 0;
+        justify-content: space-between;
     }
     #popular-nights {
         width: 100%;
         display: block;
+        padding: 40px 20px;
     }
     #popular-nights .nights-container {
-        margin: 34px 0 0 0;
+        margin: 34px auto 0;
         flex-wrap: nowrap;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     #popular-nights .card {
         height: 144px;
-        width: 27%;
-    }
-    .presentation {
-        width: 40%;
     }
     #popular-nights img {
         width: 106px;
@@ -347,8 +360,12 @@ footer p {
         width: auto;
         margin-top: 12px;
     }
+    #activities {
+        margin: 0 auto;
+    }
     #activities ul {
-        margin: 34px 0 0 0 ;
+        width: 100%;
+        margin: 34px auto 0;
     }
     #activities img {
         height: 211px;
@@ -358,19 +375,18 @@ footer p {
         width: 162px;
     }
     footer {
-        margin: 60px 70px 0 ;
         height: 225px;
         display: flex;
         justify-content: space-between;
         text-align: left;
         align-items: center;
     }
-    footer div:last-child {
-        margin-right: 170px;
-    }
 }
 
 @media screen and (max-width: 768px) {
+    section {
+        padding: 0;
+    }
     header {
         display: block;
         height: 129px;
@@ -422,25 +438,43 @@ footer p {
     #search p {
         margin: 0;
     }
+
+
     #nights {
-        margin: 17px 0;
         width: 100%;
+        margin: 17px auto;
         display: flex;
         flex-direction: column-reverse
     }
     .nights-container {
-        width: 90%;
         border-radius: 0;
         padding: 20px;
         flex-direction: column;
         gap: 10px;
     }
-    #popular-nights .nights-container, #marseille-nights .nights-container {
+    .nights-box {
+        border-radius: 0;
+        width: auto;
+    }
+    #popular-nights .card, #marseille-nights .cards {
+        width: auto;
+        margin: 0;
+    }
+    #popular-nights {
+        padding: 40px 0;
+    }
+    #marseille-nights .nights-container {
+        width: 100%;
+    }
+    #popular-nights .nights-container {
+        width: auto;
         margin: 0 auto;
     }   
+    #marseille-nights div, #popular-nights .presentation {
+        width: auto;
+    }
     #marseille-nights {
-        padding: 0;
-        width: 100%;
+        padding: 40px 0;
     }
     #marseille-nights h1 {
         width: 90%;
@@ -453,9 +487,8 @@ footer p {
         width: 100%;
         margin: 0 auto;
     }
-    .card {
-        margin: 5px auto;
-        width: 75%;
+    .presentation {
+        width: auto;
     }
     .nights-container a {
     width: 100%;
@@ -463,9 +496,9 @@ footer p {
     #popular-nights .presentation {
     width: 50%;
     }
-    #popular-nights .card {
+    /* #popular-nights .card {
         width: 75%;
-    }
+    } */
     #popular-nights-title {
         width: 90%;
         margin: 0 auto;
@@ -478,6 +511,7 @@ footer p {
     /*  activities */
     #activities {
         padding: 0 20px;
+        width: auto;
     }
     #activities ul {
         margin: 0 auto;
@@ -493,23 +527,23 @@ footer p {
         width: 100%;
         object-fit: cover;
     }
+    #activities h3 {
+        width: auto;
+    }
     footer {
         width: 100%;
-        margin: 0 auto;
+        margin: 80px auto 0;
         height: 100%;
+        padding: 10px 0 60px 0; ;
+    }
+    .footer-container {
         display: block;
-        padding: 0 0 60px 0; ;
+        width: 100%;
     }
-    footer div {
+    .footer-box {
         margin-bottom: 40px;
-        width: 70%;
+        width: 90%;
         margin: 0 auto;
-    }
-    footer div:first-child {
-        margin-left: auto;
-    }
-    footer div:last-child {
-        margin-right: auto;
     }
     footer h3 {
         margin-top: 40px;
