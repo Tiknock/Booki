@@ -170,7 +170,8 @@ article {
     border: solid 5px #fff;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 2px 2px 13px 4px rgba(198, 198, 198, 0.78);;
+    box-shadow: 2px 2px 13px 4px rgba(198, 198, 198, 0.78);
+    width: 29%;
 }
 article i {
     margin: 0;
@@ -294,9 +295,6 @@ footer p {
 }
 
 @media (min-width: 992px) and (max-width: 1150px) {
-    #marseille-nights .card {
-        width: 40%;
-    }
     #popular-nights .card, #popular-nights h3 {
         width: 80%;
     }
@@ -372,7 +370,7 @@ footer p {
         width: 182px;
     }
     #activities h3 {
-        width: 162px;
+        width: 72%;
     }
     footer {
         height: 225px;
@@ -456,7 +454,7 @@ footer p {
         border-radius: 0;
         width: auto;
     }
-    #popular-nights .card, #marseille-nights .cards {
+    #popular-nights .card, #marseille-nights .card {
         width: auto;
         margin: 0;
     }
