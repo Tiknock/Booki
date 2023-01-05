@@ -9,6 +9,10 @@
     list-style-type: none;
     font-family: Raleway, sans-serif;
 }
+html {
+    max-width: 1400px;
+    margin: auto;
+}
 header {
     height: 96px;
     display: flex;
